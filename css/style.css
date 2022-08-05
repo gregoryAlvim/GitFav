@@ -1,0 +1,143 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-size: 62.5%;
+
+   --bg-page: #000000;
+
+   --bg-favoriteButton: #065E7C;
+   --bg-favoriteButtonHover: #FFFFFF;
+
+   --color-table: #092D38;
+   --colorTable-primary: #06181c50;
+   --colorTable-secondary: #06181C;
+
+   --default-font-family: 'Roboto', sans-serif;
+
+   --transition-buttons: all 0.3s ease 0s;
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+body {
+   background-color: var(--bg-page);
+}
+
+body * {
+   font-family: var(--default-font-family);
+   font-weight: bold;
+}
+
+#app {
+   padding: 8rem 2rem;
+   max-width: 1120px;
+   margin: 0 auto;
+
+   display: grid;
+   gap: 8.7rem;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.searchForm {
+   display: flex;
+   gap: .8rem;
+}
+
+.searchForm input {
+   background-color: #06181C;
+   border: none;
+
+   width: 46.2rem;
+   height: 4.8rem;
+   padding: 2rem;
+
+   color: #7C7C8A;
+
+   border-radius: .5rem;
+}
+
+.searchForm input:focus {
+   color: #E1E1E6;  
+}
+
+.searchForm button {
+   text-transform: uppercase;
+   font-size: 1.4rem;
+   line-height: 2.4rem;
+
+   background-color: var(--bg-favoriteButton);
+
+   color: #FFFFFF;
+
+   width: 17rem;
+   height: 4.8rem;
+   border-radius: 0.5rem;
+
+   cursor: pointer;
+
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.2rem 3.2rem;
+   gap: .8rem;
+}
+
+.searchForm button:hover {
+   color: var(--bg-favoriteButton);
+   background-color: var(--bg-favoriteButtonHover);
+
+   transition: var(--transition-buttons);
+}
+
+.searchForm button:hover path {
+   fill: var(--bg-favoriteButton);
+
+   transition: var(--transition-buttons);
+}
+
+table {
+   border: solid 1px  var(--bg-favoriteButton);
+   min-width: 100%;
+
+   border-collapse: collapse;
+}
+
+thead {
+   background-color: var(--color-table);
+}
+
+thead tr {
+   color: #FFFFFF;
+   height: 6.4rem;
+}
+
+table tr:nth-child(even) {
+   background: var(--colorTable-primary);
+}
+
+table tr:nth-child(odd) {
+   background: var(--colorTable-secondary);
+}
+
+
+
+
