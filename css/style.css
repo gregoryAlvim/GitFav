@@ -43,7 +43,7 @@ body * {
 }
 
 #app {
-   padding: 8rem 2rem;
+   padding: 5rem 2rem;
    max-width: 1120px;
    margin: 0 auto;
 
@@ -115,29 +115,98 @@ nav {
 }
 
 table {
-   border: solid 1px  var(--bg-favoriteButton);
-   min-width: 100%;
-
    border-collapse: collapse;
+   overflow: hidden;
+   border: solid 1px var(--bg-favoriteButton);
+   border-radius: 1.2rem;
+   width: 100%;
+   
+   color: #E1E1E6;
 }
 
-thead {
-   background-color: var(--color-table);
+table * {
+   font-size: 1.8rem;
+   text-align: left;
 }
 
-thead tr {
-   color: #FFFFFF;
+table th {
    height: 6.4rem;
+   background-color: var(--color-table);
+   line-height: 3.2rem;
 }
 
-table tr:nth-child(even) {
+table tbody tr:nth-child(odd) {
    background: var(--colorTable-primary);
 }
 
-table tr:nth-child(odd) {
+table tbody tr:nth-child(even) {
    background: var(--colorTable-secondary);
 }
 
+table th:first-child {
+   padding: 0 10rem 0 4rem;
+}
+
+table td {
+   text-align: left;
+}
+
+table td:first-child {
+   padding: 2rem 0 2rem 4rem;
+}
+
+td.user {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+}
+
+td.user img {
+   width: 5rem;
+   height: 5rem;
+
+   object-fit: cover;
+   border-radius: 50%;
+}
+
+td.user a {
+   text-decoration: none;
+   color: #E1E1E6;
+}
+
+td.user a span {
+   font-weight: normal;
+}
+
+td .remove {
+   background: none;
+   border: none;
+
+   color: #F75A68;
+   cursor: pointer;
+}
+
+.emptyPage {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+   gap: 4rem;
+
+   height: 40rem;
+
+   color: #4E5455;
+}
+
+.emptyPage img {
+   width: 13.5rem;
+   height: 12.5rem;
+}
+
+.emptyPage h1 {
+   font-size: 4rem;
+   line-height: 2.5rem;
+}
 
 
 
