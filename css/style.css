@@ -135,6 +135,10 @@ table th {
    line-height: 3.2rem;
 }
 
+table tr * {
+   transition: var(--transition-buttons);
+}
+
 table tbody tr:nth-child(odd) {
    background: var(--colorTable-primary);
 }
