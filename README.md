@@ -23,7 +23,7 @@ O desafio foi construir uma aplicação web do zero utilizando a prototipação 
 <a href="https://www.figma.com/file/5uvg1MTKwCHu1UOj3NyF2s/%5BDesafios-Explorer%5D-GitFav-(Copy)-(Copy)?node-id=0%3A1" target="_blank">Figma</a>,
 para fortalecer meus conhecimentos em HTML, CSS e JavaScript aplicando os conceitos que foram vistos anteriormente no stage 6 do Explorer.
 
-Para visualizar e utilizar o GitFav, <a href="https://gregoryalvim.github.io/GITFAV/" target="_blank">clique aqui</a>.
+Para visualizar e utilizar o GitFav, <a href="https://gregoryalvim.github.io/GitFav/" target="_blank">clique aqui</a>.
 
 <br/>
 
