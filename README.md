@@ -1,4 +1,4 @@
-# Focus Timer
+# GitFav
 
 <br/>
 
